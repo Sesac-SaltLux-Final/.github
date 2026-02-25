@@ -82,6 +82,8 @@ SilverLink는 단순한 자동 안부 전화를 넘어 기술을 통해 단절�
 # 서비스 주요 플로우
 ## 1. 어르신 등록
 <img width=700 src="gifs/regist-elder.gif">
+<img width=700 src="gifs/register-guardian.gif">
+<img width=700 src="gifs/assignment-counselor.gif">
 <img width=700 src="gifs/call-bot.gif">
 
 # 아키텍쳐
