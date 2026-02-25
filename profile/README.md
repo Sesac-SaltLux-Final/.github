@@ -7,7 +7,7 @@
 
 # 목차
 - [📋 개요](#-개요)
-- [👥 기획 배경](#-기획-배경)
+- [👥 기획 배경](#-기획-배경-(Why-we-built-this))
 - [🔗 주요 기능 및 서비스](#-주요-기능-및-서비스)
 - [💡 소개](#-소개)
 - [🌊 핵심 서비스 흐름 (Service Flow)](#-핵심-서비스-흐름-service-flow)
@@ -79,7 +79,9 @@ SilverLink는 단순한 자동 안부 전화를 넘어 기술을 통해 단절�
 | **Infrastructure** | AWS SQS (Message Queue), AWS S3 (Storage), Docker |
 | **Security/PII** | Microsoft Presidio (개인정보 비식별화) |
 
-
+# 서비스 주요 플로우
+## 1. 어르신 등록
+<img width=250 src="gifs/어르신-등록.gif">
 
 
 # 아키텍쳐
