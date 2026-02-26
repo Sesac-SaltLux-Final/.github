@@ -230,7 +230,7 @@ sequenceDiagram
     Note over Elder, AI: 2. 대화 수행 (실시간 스트리밍)
     Elder->>AI: 🗣️ 발화 (음성 패킷 수신 및 STT)
     AI->>AI: 🛡️ Presidio (개인정보 비식별화)
-    AI->>AI: 🧠 Mem0 (장기/과거 기억 검색)
+    AI->>AI: 🧠 FAISS (장기/과거 기억 검색)
     AI->>AI: 🤖 GPT-4o-mini (응답 텍스트 생성)
     AI->>AI: 🔊 Luxia (TTS 음성 패킷 변환)
     AI->>Twilio: 🎵 음성 스트리밍 송출
