@@ -148,7 +148,7 @@ flowchart TD
     subgraph AICore ["AI Framework"]
         FA["🧠 FastAPI 서버"]
         LC["🔗 LangChain & LangGraph"]
-        MEM["🧠 Mem0 (장기 기억)"]
+        MEM["🧠 FAISS (장기 기억)"]
         PII["🕵️‍♂️ MS Presidio (비식별화)"]
         
         FA --- LC
@@ -259,7 +259,7 @@ sequenceDiagram
    2. 워커 작동:
        * Python SQS Worker가 메시지 수신 → Twilio API 호출.
    3. 대화 수행:
-       * 발화 감지 → Presidio(비식별화) → Mem0(기억 검색) → GPT-4o-mini(응답 생성) → Luxia(TTS 변환) → Twilio(음성
+       * 발화 감지 → Presidio(비식별화) → FAISS(기억 검색) → GPT-4o-mini(응답 생성) → Luxia(TTS 변환) → Twilio(음성
          송출).
    4. 분석 및 저장:
       * 통화 종료 후 LLM이 대화 요약 및 감정 분석 → Spring Boot API 호출하여 MySQL에 최종 리포트 저장.
